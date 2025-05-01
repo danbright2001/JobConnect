@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Access Your JobConnect Dashboard</title>
+  <meta name="description" content="Sign in to your JobConnect account to explore available jobs, track your progress, and start earning money instantly.">
+  <meta name="keywords" content="sign in, login, JobConnect, access dashboard, online jobs, earn money">
+  <meta name="author" content="JobConnect">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="max-w-[400px] w-full shadow-xl mx-auto p-6 bg-white rounded-lg">
+      <!-- Form-Level Error Container -->
+      <div id="formError" class="text-red-500 text-sm mb-4 hidden"></div>
+
+      <form id="signInForm">
+        <div class="text-center mb-6">
+          <h2 class="font-bold text-2xl mb-2 text-gray-800">Welcome Back</h2>
+          <p class="text-gray-500">Sign in to your account</p>
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 font-medium text-gray-700" for="email">Email</label>
+          <input id="email" name="email" 
+                 class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full transition shadow-sm" 
+                 type="email" 
+                 placeholder="youremail@gmail.com" 
+                 autocomplete="email" 
+                 required>
+          <div id="emailError" class="text-red-500 text-sm mt-1 hidden"></div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block mb-2 font-medium text-gray-700" for="password">Password</label>
+          <input id="password" name="password" 
+                 class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full transition shadow-sm" 
+                 type="password" 
+                 placeholder="••••••••" 
+                 autocomplete="current-password" 
+                 required>
+          <div id="passwordError" class="text-red-500 text-sm mt-1 hidden"></div>
+        </div>
+
+        <button id="submit" class="bg-blue-600 hover:bg-blue-700 py-3 text-center text-white font-bold w-full rounded-lg mb-4 transition duration-200 shadow-md" type="submit">Sign In</button>
+
+        <div class="flex justify-between items-center text-sm">
+          <p class="text-gray-600">Don't have an account?</p>
+          <a class="text-blue-600 font-semibold hover:text-blue-800" href="signup.html">Sign Up</a>
+        </div>
+
+        <div class="text-center mt-4">
+          <a class="text-blue-600 text-sm font-semibold hover:text-blue-800" href="forgot-password.html">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Link the external signin.js file -->
+  <script type="module" src="signin.js"></script>
+</body>
+</html>

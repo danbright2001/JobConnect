@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaziKES Kenya - Earn Instantly in KES</title>
+    <meta name="description" content="Earn money instantly in Kenya with easy jobs that require no skills. Start today and get paid in KES!">
+    <meta name="keywords" content="earn money Kenya, online jobs, easy jobs, no skills required, instant payment">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="author" content="EaziKES Kenya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="images/klogo.png" alt="EaziKES Logo" class="h-10">
+                <span class="text-xl font-bold">EaziKES</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-200 transition">Home</a>
+                <a href="#jobs" class="hover:text-blue-200 transition">Jobs</a>
+                <a href="#how-it-works" class="hover:text-blue-200 transition">How It Works</a>
+                <a href="#testimonials" class="hover:text-blue-200 transition">Success Stories</a>
+                <a href="#faqs" class="hover:text-blue-200 transition">FAQs</a>
+                <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+            
+            <div class="items-center space-x-4 hidden sm:flex">
+                <a href="auth/signin.html" class="hover:text-blue-200 transition">Sign In</a>
+                <a href="auth/signup.html" class="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition">Sign Up</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 px-4 pb-4">
+            <a href="#home" class="block py-2 hover:text-blue-200 transition">Home</a>
+            <a href="#jobs" class="block py-2 hover:text-blue-200 transition">Jobs</a>
+            <a href="#how-it-works" class="block py-2 hover:text-blue-200 transition">How It Works</a>
+            <a href="#testimonials" class="block py-2 hover:text-blue-200 transition">Success Stories</a>
+            <a href="#faqs" class="block py-2 hover:text-blue-200 transition">FAQs</a>
+            <a href="#contact" class="block py-2 hover:text-blue-200 transition">Contact</a>
+            <div class="pt-2 border-t border-blue-600 mt-2">
+                <a href="auth/signin.html" class="block py-2 hover:text-blue-200 transition">Sign In</a>
+                <a href="auth/signup.html" class="block bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition text-center">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rest of your HTML content remains exactly the same -->
+    <!-- ... -->
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-red-500 to-blue-700 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-balance">Earn Instant Cash in KES Today!</h1>
+                <p class="text-xl mb-6">Complete simple tasks with no skills required and get paid instantly to your M-Pesa or bank account.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="auth/signup.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold text-center hover:bg-blue-50 transition">Start Earning Now</a>
+                    <a href="#jobs" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-bold text-center hover:bg-white hover:text-blue-600 transition">Browse Jobs</a>
+                </div>
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                    </div>
+                    <div class="ml-4">
+                        <p class="font-medium">Join 10,000+ Kenyans earning daily</p>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2">4.9/5 from 2,500 reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-gray-800 max-w-md w-full">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Your Earnings Potential</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span>Daily Earnings</span>
+                            <span class="font-bold">KES 500 - 2,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Weekly Earnings</span>
+                            <span class="font-bold">KES 3,500 - 14,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Monthly Earnings</span>
+                            <span class="font-bold">KES 15,000 - 60,000</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-blue-100 p-4 rounded-lg">
+                        <p class="text-blue-800 font-medium">"I made KES 1,850 on my first day with just 2 hours of work!"</p>
+                        <p class="text-sm mt-1">- Jane M., Nairobi</p>
+                    </div>
+                    <a href="auth/signup.html" class="mt-6 block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-center hover:bg-blue-700 transition">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How EaziKES Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-plus text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Sign Up Free</h3>
+                    <p>Create your account in under 2 minutes. No fees, no commitments.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tasks text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Choose Tasks</h3>
+                    <p>Browse hundreds of simple jobs that require no special skills.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-money-bill-wave text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Get Paid Instantly</h3>
+                    <p>Complete tasks and receive payments directly to your M-Pesa or bank account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="jobs" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Easy Jobs You Can Start Today</h2>
+            <p class="text-center text-gray-600 mb-12">No experience or special skills required - just your time and effort!</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Job 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Online Surveys</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 50-200/survey</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Share your opinions on products and services. Takes 5-15 minutes per survey.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Flexible hours</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Data Entry</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 100-500/task</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Simple typing jobs entering information into spreadsheets or forms.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Flexible hours</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+                
+                <!-- Job 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">App Testing</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 200-1,000/test</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Try out new apps and provide feedback. No technical knowledge needed.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>10-30 minutes per test</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+                
+                <!-- Job 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Social Media Engagement</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 5-50/action</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Like, share, comment, or follow on social media platforms.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>1-5 minutes per action</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+                
+                <!-- Job 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Product Reviews</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 100-500/review</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Write honest reviews for products you've tried or services you've used.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>10-20 minutes per review</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+                
+                <!-- Job 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Micro Tasks</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">KES 10-200/task</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Small online jobs like image tagging, categorization, or verification.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>1-15 minutes per task</span>
+                        </div>
+                        <a href="auth/signup.html" class="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Start Earning</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="auth/signup.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">View All 50+ Job Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Success Stories from Our Users</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-blue-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah K.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-4">"I was skeptical at first, but I made KES 1,200 on my first day just by completing surveys and testing apps. The payments came through to my M-Pesa instantly!"</p>
+                    <div class="text-blue-200 text-sm">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Joined 3 months ago - Earned KES 78,400 total</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-blue-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James M.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-4">"As a student, EaziKES has been a lifesaver. I earn about KES 15,000 per month working 1-2 hours daily. It covers all my expenses and then some!"</p>
+                    <div class="text-blue-200 text-sm">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Joined 5 months ago - Earned KES 92,750 total</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-blue-700 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Grace W.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-4">"I'm a stay-at-home mom and EaziKES allows me to contribute to our family income. Last month I made KES 28,000 just working during nap times!"</p>
+                    <div class="text-blue-200 text-sm">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Joined 8 months ago - Earned KES 156,200 total</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Proof -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Real Payments to Real People</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="border rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200/4ade80/ffffff?text=KES+1,850" alt="Payment proof" class="w-full h-auto">
+                </div>
+                <div class="border rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200/60a5fa/ffffff?text=KES+3,200" alt="Payment proof" class="w-full h-auto">
+                </div>
+                <div class="border rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200/f472b6/ffffff?text=KES+5,750" alt="Payment proof" class="w-full h-auto">
+                </div>
+                <div class="border rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200/f97316/ffffff?text=KES+2,400" alt="Payment proof" class="w-full h-auto">
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="auth/signup.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Start Earning Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium">How quickly can I start earning money?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p>You can start earning within minutes of signing up! After creating your free account, you'll immediately have access to dozens of tasks you can complete right away. Many of our users earn their first KES within 30 minutes of joining.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium">What payment methods do you offer?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p>We offer instant payments via M-Pesa, which is the most popular option. We also support bank transfers for those who prefer that method. Payments are processed immediately upon task completion and approval.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium">Is there any cost to join?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p>Absolutely not! EaziKES is completely free to join. There are no hidden fees or membership costs. We make money from the businesses that provide the tasks, not from our workers.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium">How much can I realistically earn?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p>Earnings vary based on how much time you dedicate. Our average user earns between KES 500-2,000 per day working 1-3 hours. Top earners make KES 4,000+ daily by maximizing high-paying tasks. The more you work, the more you earn!</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium">Do I need any special equipment?</h3>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p>All you need is a smartphone, tablet, or computer with internet access. Most tasks can be completed on mobile devices, making it easy to earn money anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up CTA -->
+    <section class="py-16 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Earning Today?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of Kenyans who are making real money with simple online tasks. No experience needed!</p>
+            <a href="auth/signup.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition">Sign Up Now - It's Free!</a>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            
+            <div class="bg-gray-50 rounded-lg shadow-md p-8">
+                <form id="contact-form">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Send Message</button>
+                </form>
+                
+                <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
+                    <p>Thank you for your message! We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="text-center p-4">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Email Us</h3>
+                    <p class="text-gray-600">support@eaziKES.co.ke</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Call Us</h3>
+                    <p class="text-gray-600">+254 700 123 456</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1">Visit Us</h3>
+                    <p class="text-gray-600">Nairobi, Kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold">Welcome Back</h3>
+                    <button id="close-signin" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <form id="signin-form" class="space-y-4">
+                    <div>
+                        <label for="signin-email" class="block text-gray-700 mb-1">Email or Phone</label>
+                        <input type="text" id="signin-email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="signin-password" class="block text-gray-700 mb-1">Password</label>
+                        <input type="password" id="signin-password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="remember-me" class="mr-2">
+                            <label for="remember-me" class="text-sm text-gray-600">Remember me</label>
+                        </div>
+                        <a href="#forgot-password" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Sign In</button>
+                </form>
+                
+                <div class="mt-4 text-center text-sm">
+                    <p>Don't have an account? <a href="#signup" class="text-blue-600 font-medium">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="images/klogo.png" alt="EaziKES Logo" class="h-8">
+                        <span class="text-xl font-bold">EaziKES</span>
+                    </div>
+                    <p class="text-gray-400">The easiest way to earn money online in Kenya. Join thousands making real income daily with simple tasks.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#jobs" class="text-gray-400 hover:text-white transition">Job Listings</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition">How It Works</a></li>
+                        <li><a href="#faqs" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Job Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Online Surveys</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Data Entry</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">App Testing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Social Media Jobs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Product Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Payment Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 EaziKES Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
